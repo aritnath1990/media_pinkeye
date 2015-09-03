@@ -3,14 +3,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.library_thumbnail
-    - field.field.media.image.image
-    - media_entity.bundle.image
+    - field.field.media.audio.audio
+    - media_entity.bundle.audio
   module:
-    - image
-id: media.image.library_thumbnail
+    - file
+id: media.audio.library_thumbnail
 label: null
 targetEntityType: media
-bundle: image
+bundle: audio
 mode: library_thumbnail
 content:
   name:

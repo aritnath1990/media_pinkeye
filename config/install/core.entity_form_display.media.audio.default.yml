@@ -2,11 +2,13 @@ langcode: und
 status: true
 dependencies:
   config:
-    - field.field.media.instagram.instagram
-    - media_entity.bundle.instagram
-id: media.instagram.default
+    - field.field.media.audio.audio
+    - media_entity.bundle.audio
+  module:
+    - file
+id: media.audio.default
 targetEntityType: media
-bundle: instagram
+bundle: audio
 mode: default
 content:
   name:
@@ -16,17 +18,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  instagram:
-    type: string_textarea
+  audio:
+    type: file_generic
     weight: 1
     settings:
-      rows: 3
-      placeholder: 'Paste Instagram post URL or embed code.'
-    third_party_settings: {  }
-  category:
-    type: options_select
-    weight: 2
-    settings: {  }
+      progress_indicator: throbber
     third_party_settings: {  }
   created:
     type: datetime_timestamp
